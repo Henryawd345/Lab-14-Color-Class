@@ -45,5 +45,4 @@ int main() {
     Red.setGreenv(0);
     Red.setBluev(255);
     print(Blue);
-
 }
