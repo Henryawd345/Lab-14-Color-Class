@@ -22,5 +22,14 @@ public:
         cout << setw(15) << "Green Value: " << greenv << endl;
         cout << setw(15) << "Blue Value: " << bluev << endl;
     }
-
 };
+
+int main() {
+    cout << fixed << setprecision(2);
+    Color Red;
+    Red.setRedv(255);
+    Red.setGreenv(0);
+    Red.setBluev(0);
+
+
+}
