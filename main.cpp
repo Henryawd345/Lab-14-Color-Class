@@ -32,7 +32,7 @@ public:
 //void print(Color);
 
 int main() {
-    cout << fixed << setprecision(2);
+
     Color RedCl;
     RedCl.setcolorName("Red");
     RedCl.setRedv(255);
@@ -53,6 +53,34 @@ int main() {
     BlueCl.setGreenv(0);
     BlueCl.setBluev(255);
     BlueCl.print();
+
+    Color MagentaCl;
+    MagentaCl.setcolorName("Magenta");
+    MagentaCl.setRedv(255);
+    MagentaCl.setGreenv(0);
+    MagentaCl.setBluev(255);
+    MagentaCl.print();
+
+    Color YellowCl;
+    YellowCl.setcolorName("Yellow");
+    YellowCl.setRedv(255);
+    YellowCl.setGreenv(255);
+    YellowCl.setBluev(0);
+    YellowCl.print();
+
+    Color CyanCl;
+    CyanCl.setcolorName("Cyan");
+    CyanCl.setRedv(0);
+    CyanCl.setGreenv(255);
+    CyanCl.setBluev(255);
+    CyanCl.print();
+
+    Color WhiteCl;
+    WhiteCl.setcolorName("White");
+    WhiteCl.setRedv(255);
+    WhiteCl.setGreenv(255);
+    WhiteCl.setBluev(255);
+    WhiteCl.print();
 
     return 0;
 }
