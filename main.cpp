@@ -4,6 +4,7 @@
 
 using namespace std;
 
+const int W_NAME = 20, W_LAB = 13, W_VAL = 5;
 
 class Color{
 private:
@@ -22,10 +23,10 @@ public:
     void setBluev(int b) {bluev = b;}
 
     void print() {
-        cout << "Color >> " << name
-        << setw(18) << "Red Value: " << redv
-        << setw(18) << "Green Value: " << greenv
-        << setw(18) << "Blue Value: " << bluev << endl;
+        cout << left  << setw(W_NAME) << ("Color >> " + name)
+         << left  << setw(W_LAB)  << "Red Value:"   << right << setw(W_VAL) << redv   << ' '
+         << left  << setw(W_LAB)  << "Green Value:" << right << setw(W_VAL) << greenv << ' '
+         << left  << setw(W_LAB)  << "Blue Value:"  << right << setw(W_VAL) << bluev  << '\n';
     }
 };
 
