@@ -24,12 +24,26 @@ public:
     }
 };
 
+void print(Color);
+
 int main() {
     cout << fixed << setprecision(2);
     Color Red;
     Red.setRedv(255);
     Red.setGreenv(0);
     Red.setBluev(0);
+    print(Red);
 
+    Color Green;
+    Red.setRedv(0);
+    Red.setGreenv(255);
+    Red.setBluev(0);
+    print(Green);
+
+    Color Blue;
+    Red.setRedv(0);
+    Red.setGreenv(0);
+    Red.setBluev(255);
+    print(Blue);
 
 }
