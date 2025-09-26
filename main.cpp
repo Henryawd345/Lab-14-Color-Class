@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 using namespace std;
 
@@ -21,10 +22,10 @@ public:
     void setBluev(int b) {bluev = b;}
 
     void print() {
-        cout << setw(15) << "Color >> " << name;
-        cout << setw(15) << "Red Value: " << redv;
-        cout << setw(15) << "Green Value: " << greenv;
-        cout << setw(15) << "Blue Value: " << bluev << endl;
+        cout << "Color >> " << name
+        << setw(18) << "Red Value: " << redv
+        << setw(18) << "Green Value: " << greenv
+        << setw(18) << "Blue Value: " << bluev << endl;
     }
 };
 
